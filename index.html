@@ -1,0 +1,850 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link href="main.css" rel="stylesheet" />
+    <title>CRAVE STUDIO</title>
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+      <div class="container">
+        <a href="index.html" class="navbar-brand">Crave Studio</a>
+        <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#menu"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav mx-auto justify-content-center ">
+          <li><a href="#classes" class="nav-link px-2 link-secondary">Classes</a></li>
+          <li><a href="#pricing" class="nav-link px-2 link-dark">Pricing</a></li>
+          <li><a href="#about" class="nav-link px-2 link-dark">About</a></li>
+          <li><a href="#testimonial" class="nav-link px-2 link-dark">Testimonials</a></li>
+          
+        </ul>
+  
+        <div class=" text-end">
+          <button type="button" class="btn btn-outline-warning me-2" data-bs-toggle="modal" data-bs-target="#login">Login</button>
+          <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#bookClass">Book a Class</button>
+        </div>
+     </div>
+    </div>
+    </nav>
+
+    <!-- MODAL: LOGIN -->
+    <div class="modal fade" id="login" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-5 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+       
+        <h2 class="fw-bold mb-0">Welcome Back!</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+
+      <div class="modal-body p-5 pt-0">
+        <form class="">
+          <div class="form-floating mb-3">
+            <input type="email" class="form-control rounded-4" id="floatingInput" placeholder="name@example.com">
+            <label class="text-secondary" for="floatingInput">Email address</label>
+          </div>
+          <div class="form-floating mb-3">
+            <input type="password" class="form-control rounded-4" id="floatingPassword" placeholder="Password">
+            <label class="text-secondary" for="floatingPassword">Password</label>
+          </div>
+          <button class="w-100 mb-2 btn btn-lg rounded-4 btn-warning" type="submit">Login</button>
+          <small class="text-muted">By clicking Sign up, you agree to the terms of use.</small>
+          <hr class="my-4">
+          <h2 class="fs-5 fw-bold mb-3">Or use a third-party to sign up</h2>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#google"></use></svg>
+            Sign up with Gmail
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#facebook"></use></svg>
+            Sign up with Facebook
+          </button>
+          <button class="w-100 py-2 mb-2 btn btn-outline-secondary rounded-4" type="submit">
+            <svg class="bi me-1" width="16" height="16"><use xlink:href="#twitter"></use></svg>
+            Sign up with Twitter
+          </button>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+ 
+<!-- MODAL: BOOK A CLASS-->
+<div class="modal fade" id="bookClass" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content rounded-6 shadow">
+      <div class="modal-header p-5 pb-4 border-bottom-0">
+       
+        <h2 class="fw-bold mb-0">Book a Class</h2>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-5 pt-0">
+        <ul class="d-grid gap-4 my-5 list-unstyled">
+          <li class="d-flex gap-4">
+            <img
+            src="https://randomuser.me/api/portraits/women/11.jpg"
+            class="rounded-circle mb-3"
+            width="48"
+            height="48"
+          />
+            <div>
+              <h5 class="mb-0">Beginner</h5>
+             <p class="text-secondary">Monday 12-1 | Nettie </p>
+            </div>
+          </li>
+          <li class="d-flex gap-4">
+            <img
+            src="https://randomuser.me/api/portraits/women/3.jpg"
+            class="rounded-circle mb-3"
+            width="48"
+            height="48"
+          />
+            <div>
+              <h5 class="mb-0">Functional Flow</h5>
+              <p class="text-secondary"> Tuesday 3-4 | Caroline </p>
+            </div>
+          </li>
+          <li class="d-flex gap-4">
+            <img
+            src="https://randomuser.me/api/portraits/women/17.jpg"
+            class="rounded-circle mb-3"
+            width="48" height="48"
+          />
+            <div>
+              <h5 class="mb-0">Yin & Yang</h5>
+              <p class="text-secondary"> Saturday 3-5 | Hana</p>
+            </div>
+          </li>
+          <li class="d-flex gap-4">
+            <img
+                  src="https://randomuser.me/api/portraits/women/3.jpg"
+                  class="rounded-circle mb-3"
+                  width="48"
+                  height="48"
+                />
+            <div>
+              <h5 class="mb-0">Energy Flow</h5>
+              <p class="text-secondary"> Friday 5-7 | Caroline</p>
+            </div>
+          </li>
+        </ul>
+        <button type="button" class="btn btn-lg btn-warning mt-5 w-100" data-bs-dismiss="modal">Book</button>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    
+
+    <!-- SHOWCASE -->
+    <div class="bg shadow-1-strong mb-5 text-white p-5 text-center align-middle">
+      <div class="container py-5">
+        <div class="row py-5 ">
+          <div class="text ">
+            <h2>Reach Your Potentials with Our Yoga Program</h2>
+            <h6>The harmony of your body and soul starts here.</h6>
+           
+          </div>
+        </div>
+        
+        <a href="#" class="btn btn-warning mt-3 text-dark align-baseline" data-bs-toggle="modal" data-bs-target="#bookClass">Book a Class</a>
+      </div>
+    </div>
+
+   
+
+    <!--CLASSES-->
+    <div class="container px-4 py-5" id="classes">
+      <h2 class="pb-2 border-bottom mb-5">Classes</h2>
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            BEGINNERS
+            <h5 class="text-warning">
+              A progressive series made for beginners
+            </h5>
+          </h2>
+          <p class="lead">
+            You will learn basic postures and breathing techniques that will
+            help to relieve stress, improve flexibility and strength, and
+            increase your sense of well-being. You do not need to be flexible or
+            have any previous experience with yoga in order to take this class.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <image
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="./img/beginner.jpg"
+          width="500"
+          height="500"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+        </div>
+      </div>
+      <hr class="featurette-divider my-4" />
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            FUNCTIONAL FLOW
+            <h5 class="text-warning">Great class for beginners</h5>
+          </h2>
+          <p class="lead">
+            Functional Flow classes focus on alignment, adapting poses, working
+            with the breath, and increasing flexibility, strength, and balance.
+            Assistance by way of props may be utilized to allow greater access,
+            opening, and awareness throughout the body, and to allow students of
+            various levels to practice safely and comfortably.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <image
+          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+          src="./img/functional.jpg"
+          width="500"
+          height="500"
+          xmlns="http://www.w3.org/2000/svg"
+          role="img"
+          aria-label="Placeholder: 500x500"
+          preserveAspectRatio="xMidYMid slice"
+          focusable="false"
+        >
+        </div>
+      </div>
+      <hr class="featurette-divider my-4" />
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">
+            YIN & YANG
+            <h5 class="text-warning">
+              Balance your energy and quiet your mind.
+            </h5>
+          </h2>
+          <p class="lead">
+            In the first half of the class you'll move through active yoga
+            poses, linking breath and movement to harness your energy and warm
+            the body. Wind down during the second half of class with a sequence
+            of Yin poses, holding each for several minutes to create a calming,
+            meditative effect. Combining a Vinyasa Flow (yang) and a Yin
+            practice promotes better mobility and strength in your joints,
+            ligaments, and deep connective tissues, while also challenging your
+            mind to stay present.
+          </p>
+        </div>
+        <div class="col-md-5">
+          <image
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="./img/yinyang.jpg"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            
+        </div>
+      </div>
+      <hr class="featurette-divider my-4" />
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">
+            ENERGY FLOW
+            <h5 class="text-warning">
+              A connection between breath and movement
+            </h5>
+          </h2>
+          <p class="lead">
+            Classes may be faster or slower paced depending on the instructor.
+            Expect music (sometimes upbeat) to inspire movement and personal
+            power. Props may be used for support. Classes are suitable for all
+            levels, but some yoga experience is helpful.
+          </p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <image
+            class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto"
+            src="./img/energy.jpg"
+            width="500"
+            height="500"
+            xmlns="http://www.w3.org/2000/svg"
+            role="img"
+            aria-label="Placeholder: 500x500"
+            preserveAspectRatio="xMidYMid slice"
+            focusable="false"
+          >
+            
+            
+          </i>
+        </div>
+      </div>
+    </div>
+
+    <!--BENEFITS-->
+    <!-- first row-->
+    <div class="container px-4 py-5" id="benefits">
+      <h2 class="pb-2 border-bottom">Benefits of Yoga</h2>
+
+      <div class="row text-center py-5">
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/balanceFlex.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+                     <h5>Balance and Flexibility</h5>
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/relief.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+          <h5>Stress Relief</h5>
+          
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/cardio.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+
+          <h5>Cardiovascular Functioning</h5>
+          
+        </div>
+
+        <!-- second row-->
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/strength.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+
+          <h5>Strength-building</h5>
+         
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/inflammation.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+
+          <h5>Less Inflammation</h5>
+          
+        </div>
+
+        <div class="col-lg-4 col-md-4 col-sm-6 mb-4">
+          <img
+          src="./img/immunity.jpg"
+          class="rounded-circle mb-3"
+          width="120"
+          height="120"
+          class="rounded-circle border border-white"
+        />
+          <h5>Boost Immunity</h5>
+         
+        </div>
+
+        <!-- </div> -->
+      </div>
+    </div>
+
+
+    <!--PRICING-->
+    <div class="container px-4 py-5" id="pricing">
+      <h2 class="pb-2 border-bottom">Pricing</h2>
+      <div class="row row-cols-1 row-cols-md-3 mb-3 text-center py-5">
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3 bg-dark">
+              <h4 class="my-0 fw-normal text-white">Weekly</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title mt-3 mb-3">
+                $40<small class="text-muted fw-light">/wk</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>First time members only</li>
+                <li>Valid for any classes</li>
+                <li>Expires 30 days from date of purchase</li>
+              </ul>
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-warning mt-3 mb-3"
+              >
+                SELECT
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm border-warning">
+            <div class="card-header py-3 bg-warning border-warning">
+              <h4 class="my-0 fw-normal text-white">Monthly</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title mt-3 mb-3">
+                $120<small class="text-muted fw-light">/mo</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>One month unlimited</li>
+                <li>Valid for any classes</li>
+                <li>Expires 30 days from date of purchase</li>
+              </ul>
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-warning mt-3 mb-3"
+              >
+                SELECT
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card mb-4 rounded-3 shadow-sm">
+            <div class="card-header py-3 text-white bg-dark">
+              <h4 class="my-0 fw-normal">One Year</h4>
+            </div>
+            <div class="card-body">
+              <h1 class="card-title pricing-card-title mt-3 mb-3">
+                $980<small class="text-muted fw-light">/yr</small>
+              </h1>
+              <ul class="list-unstyled mt-3 mb-4">
+                <li>One year unlimited</li>
+                <li>Valid for any classes</li>
+                <li>Expires 1 year from date of purchase.</li>
+              </ul>
+              <button
+                type="button"
+                class="w-100 btn btn-lg btn-outline-warning mt-3 mb-3"
+              >
+                SELECT
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!--LOCATION-->
+    <div class="container px-4 py-5" id="about">
+      <h2 class="pb-2 border-bottom">About: Location</h2>
+    <div class="px-4 pt-5 my-5 text-center ">
+      <h1 class="display-5 fw-bold">Crave Studio</h1>
+      <div class="col-lg-6 mx-auto">
+        <p class="lead mb-1 mt-3">12345 67 Avenue, Surrey, BC </p>
+        <p class="lead mb-1">778-123-4567</p>
+        <p class="lead mb-4">CraveStudio@gmail.com</p>
+        
+      </div>
+      <div class="overflow-hidden" style="max-height: 60vh;">
+        <div class="container px-5">
+          <img src="./img/studio.jpg" class="img-fluid border rounded-3  mb-4" alt="Example image" width="700"  loading="lazy">
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+    <!--INSTRUCTORS-->
+    <div class="container px-4 py-5">
+      <h2 class="pb-2 border-bottom">About: Instructors</h2>
+
+      <div id="myCarousel" class="carousel slide py-5" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="0"
+            class="active"
+            aria-label="Slide 1"
+            aria-current="true"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+            class=""
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#myCarousel"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+            class=""
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active "  >
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000"></rect>
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <img
+                  src="https://randomuser.me/api/portraits/women/11.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h1>Nettie Bright</h1>
+                <p>
+                  Owner of Crave Studio. Skilled and certified yoga instructor
+                  with an ability to build effective relationships with students
+                  of all background and skill levels.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-outline-warning" href="#"
+                    >Learn More</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000"></rect>
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <img
+                  src="https://randomuser.me/api/portraits/women/17.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h1>Hana Flynn</h1>
+                <p>
+                  Motivated Yoga instructor with advanced training in yoga and
+                  specialization in Ashtanga principles. Enjoy inspiring others
+                  to improve wellness and commit to fitness goals.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-outline-warning" href="#"
+                    >Learn more</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <svg
+              class="bd-placeholder-img"
+              width="100%"
+              height="100%"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+              preserveAspectRatio="xMidYMid slice"
+              focusable="false"
+            >
+              <rect width="100%" height="100%" fill="#000"></rect>
+            </svg>
+
+            <div class="container">
+              <div class="carousel-caption">
+                <img
+                  src="https://randomuser.me/api/portraits/women/3.jpg"
+                  class="rounded-circle mb-3"
+                />
+                <h1>Caroline Warner</h1>
+                <p>
+                  Passionate yoga instuctor with 7+ years of professional
+                  experience in leading flow and vinyasa yoga classes. Caroline
+                  is known for knowledge of alignment and sense of humour.
+                </p>
+                <p>
+                  <a class="btn btn-lg btn-outline-warning" href="#"
+                    >Learn More</a
+                  >
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#myCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+
+
+    <!--TESTIMONIALS-->
+    <div class="container px-4 py-5" id="testimonial">
+      <h2 class="pb-2 border-bottom">Testimonials</h2>
+
+      <div class="row row-cols-1 row-cols-lg-3 align-items-stretch g-4 py-5">
+        <div class="col mb-4">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold">
+                Amazing studio, great teachers and peaceful classes!
+              </h2>
+
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/19.jpg"
+                    class="rounded-circle mb-3"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Lara</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>&#11088; 5.0</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+          >
+            <div
+              class="d-flex flex-column h-100 p-5 pb-3 text-white text-shadow-1"
+            >
+              <h2 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold">
+                Friendly and incredibly knowledgeable instructors
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/32.jpg"
+                    class="rounded-circle mb-3"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Natalie</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small> &#11088; 5.0</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col mb-4">
+          <div
+            class="card card-cover h-100 overflow-hidden text-white bg-dark rounded-5 shadow-lg"
+            style="background-image: url('unsplash-photo-3.jpg')"
+          >
+            <div class="d-flex flex-column h-100 p-5 pb-3 text-shadow-1">
+              <h2 class="pt-5 mt-5 mb-4 display-7 lh-1 fw-bold">
+                Absolutely my favorite place for yoga! Highly recommend!
+              </h2>
+              <ul class="d-flex list-unstyled mt-auto">
+                <li class="me-auto">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/10.jpg"
+                    class="rounded-circle mb-3"
+                    width="32"
+                    height="32"
+                    class="rounded-circle border border-white"
+                  />
+                </li>
+                <li class="d-flex align-items-center me-3">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#geo-fill"></use>
+                  </svg>
+                  <small>Jennifer</small>
+                </li>
+                <li class="d-flex align-items-center">
+                  <svg class="bi me-2" width="1em" height="1em">
+                    <use xlink:href="#calendar3"></use>
+                  </svg>
+                  <small>&#11088; 5.0</small>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+    <!--FOOTER-->
+    <footer class="container py-5">
+      <div class="row">
+        <div class="col-12 col-md">
+         <h5 class="font-weight-bold">Crave Studio</h5>
+          <small class="d-block mb-3 text-muted">© 2015–2022</small>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Features</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#classes"
+                >Classes</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#pricing"
+                >Pricing</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#about"
+                >About Us</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#testimonial"
+                >Testimonials</a
+              >
+            </li>
+            
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Resources</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Blog</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Youtube</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>Contact Us</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">FAQs</a>
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Contact Us</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="col-6 col-md">
+          <h5>About</h5>
+          <ul class="list-unstyled text-small">
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Instructors</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Locations</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#"
+                >Privacy</a
+              >
+            </li>
+            <li>
+              <a class="link-secondary text-decoration-none" href="#">Terms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+    
+  </body>
+</html>
