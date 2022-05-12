@@ -2,9 +2,6 @@
 
 CRAVE STUDIO
 
-## WEBSITE
-
-[link]
 
 ## DESCRIPTION
 
